@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  background: linear-gradient(135deg, #cf6915, #07F26D);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Centrado vertical */
+}
+
+.menu-container {
+  width: 90%; /* Tamaño de pantalla al 90 */
+  max-width: 600px; /* Ancho máximo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-title {
+  font-size: 75px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #17bb2d; /* Color base */
+  text-shadow: 0 0 5px #cf6915, 0 0 10px #cf6915, 0 0 20px #cf6915, 0 0 40px #cf6915;
+  animation: glow 1.5s infinite alternate;
+  margin-bottom: 50px;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #cf6915, 0 0 10px #cf6915, 0 0 20px #cf6915, 0 0 40px #cf6915;
+  }
+  100% {
+    text-shadow: 0 0 10px #cf6915, 0 0 20px #cf6915, 0 0 30px #cf6915, 0 0 50px #cf6915;
+  }
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 20px; /* Espacio entre los botones */
+}
+
+.menu-button {
+  background: linear-gradient(135deg, #29A655, #0DD965);
+  color: white;
+  border: none;
+  padding: 20px 0; /* Aumenta el padding para que el botón sea más grande */
+  width: 60%; /* Asegúrate de que el ancho no sea muy pequeño */
+  font-size: 22px; /* Aumenta el tamaño de la fuente */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Asegura que el texto esté centrado */
+  display: inline-block; /* Asegura que se ajuste al tamaño del contenido */
+  min-width: 250px; /* Asegura que el botón tenga un tamaño mínimo */
+}
+
+.menu-button:hover {
+  background: linear-gradient(135deg, #cf6915, #07F26D);
+  transform: scale(1.05); /* Efecto de crecimiento */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3);
+}
